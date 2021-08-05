@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+
+ul {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: 1em;
+  border: white;
+  position: fixed;
+}
+p {
+ font-size: 10em;
+ margin-left: 1em;
+}
+
+ul li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  /* padding: 1em; */
+  margin: 1em 1em 1em 1em;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li a .fa {
+  font-size: 3em;
+}
+
+ul li a .fa-facebook {
+  color: #1b628f;
+}
+ul li a .fa-instagram {
+  color: #d43d77;
+}
+ul li a .fa-twitter {
+  color: #40b2d8;
+}
+ul li a .fa-whatsapp {
+  color: #00c200;
+}
+ul li a .fa-linkedin {
+  color: #006bc2;
+}
+
+ul li::before {
+  font-family: fontAwesome;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3em;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+ul li:nth-child(1):before {
+  content: "\f09a";
+  color: #0a3652;
+  pointer-events: none;       
+}
+
+ul li:nth-child(2):before {
+  content: "\f16d";
+  color: #5f0a32;
+  pointer-events: none;
+}
+
+ul li:nth-child(3):before {
+  content: "\f099";
+  color: #0e4b70;
+  pointer-events: none;
+}
+
+ul li:nth-child(4):before {
+  content: "\f232";
+  color: #074910;
+  pointer-events: none;
+}
+
+ul li:nth-child(5):before {
+  content: "\f0e1";
+  color: #0b3a57;
+  pointer-events: none;
+}
+
+ul li:hover:before {
+  height: 100%;
+  cursor: pointer;
+  opacity: 1.5;
+}
